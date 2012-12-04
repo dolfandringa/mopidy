@@ -24,6 +24,7 @@ from __future__ import unicode_literals
 BACKENDS = (
     'mopidy.backends.local.LocalBackend',
     'mopidy.backends.spotify.SpotifyBackend',
+    'mopidy.backends.cd.CdBackend',
 )
 
 #: The log format used for informational logging.
@@ -282,3 +283,5 @@ SPOTIFY_PROXY_USERNAME = None
 #:
 #:     SPOTIFY_PROXY_PASSWORD = None
 SPOTIFY_PROXY_PASSWORD = None
+
+CD_DEVICE_PATH = u'/dev/cdrom'
